@@ -10,12 +10,10 @@ export function shortenComment(comment: string): string {
       if(result.indexOf(i) === (result.length - 1)){
         finalResult += i;
       }else{
-        finalResult += i;
-        finalResult += " ";
+        finalResult += `${i} `;
       }
     }
   }
-
   return finalResult;
 }
 
