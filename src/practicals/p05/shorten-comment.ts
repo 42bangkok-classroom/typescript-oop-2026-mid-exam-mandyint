@@ -6,8 +6,12 @@ export function shortenComment(comment: string): string {
   let finalResult = '';
   for(const i of result){
     if(i.length >= 5 && i.length <= 10){
-      finalResult += i;
-      finalResult += " ";
+      if(result.indexOf(i) === (result.length - 1)){
+        finalResult += i;
+      }else{
+        finalResult += i;
+        finalResult += " ";
+      }
     }
   }
 
