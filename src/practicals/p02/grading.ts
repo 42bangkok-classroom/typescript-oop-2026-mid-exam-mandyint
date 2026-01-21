@@ -1,7 +1,7 @@
 // Write your code below
 const input = +process.argv[2];
 
-if((typeof input != "number") || input > 100 || input < 0){
+if((typeof input != "number") || input > 100 || input < 0 || !input){
     console.log("Invalid input");
 }else if(input >= 80){
     console.log("Grade is A");
