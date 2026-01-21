@@ -1,11 +1,12 @@
 const comment = "TypeScript is a strongly typed programming language"
+const comment2 = "aaaaa aaaaaaaaaa"
 
 export function shortenComment(comment: string): string {
   // Write your code below
   const result: string[] = comment.split(" ");
   let finalResult = '';
   for(const i of result){
-    if(i.length >= 5 && i.length <= 10){
+    if(i.length >= 5 && i.length < 11){
       if(result.indexOf(i) === (result.length - 1)){
         finalResult += i;
       }else{
@@ -18,4 +19,4 @@ export function shortenComment(comment: string): string {
   return finalResult;
 }
 
-console.log(shortenComment(comment));
+console.log(shortenComment(comment2));
